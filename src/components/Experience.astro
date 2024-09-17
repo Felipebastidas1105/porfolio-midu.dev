@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Actualmente...",
+        title: "Desarrollo de Software inmobiliario",
+        description:
+            "Desarrolle un software para una inmobiliaria de Manizales, Colombia con el objetivo de mejorar la experiencia de los clientes y poder tener un sistema de gestion por parte de los agentes inmobiliarios.",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+    {
+        title: "Desarrollo de software de gestion de inventario",
+        date: "Enero 2024",
+        description:
+            "Desarrolle un software para la gestion de inventario de una empresa de Manizales, Colombia con el objetivo de mejorar el manejo de informacion de la empresa, aumento la eficiencia con el manejo de informacion en bases de datos y evitando asi la perdida de la misma",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+    {
+        title: "Estudios en ADSO (Analisis y Desarrollo de Software)",
+        date: "Abril 2021",
+        description:
+            "Inicie con mis estudios en ADSO (Analisis y Desarrollo de Software) para mejorar mi conocimiento en el desarrollo de software.",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>
